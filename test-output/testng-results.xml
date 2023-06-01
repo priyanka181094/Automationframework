@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-29T11:52:56 IST" name="Suite" finished-at="2023-05-29T11:52:56 IST" duration-ms="0">
+    <groups>
+      <group name="RegessionSuite">
+        <method signature="CreateContactwithOrganizationTest.createcontactwithorganization()[pri:0, instance:Vtigrerapplication.CreateContactwithOrganizationTest@54e1c68b]" name="createcontactwithorganization" class="Vtigrerapplication.CreateContactwithOrganizationTest"/>
+        <method signature="CreateContactwithOrganizationTest.createcontactwithorganization()[pri:0, instance:Vtigrerapplication.CreateContactwithOrganizationTest@f0c8a99]" name="createcontactwithorganization" class="Vtigrerapplication.CreateContactwithOrganizationTest"/>
+      </group> <!-- RegessionSuite -->
+    </groups>
+  </suite> <!-- Suite -->
+</testng-results>
