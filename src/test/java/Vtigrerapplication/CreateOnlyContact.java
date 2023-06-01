@@ -104,6 +104,7 @@ public class CreateOnlyContact extends BaseClass{
 		System.out.println("demo suite is here");
 		
 	}
+	//creating contact successful
 	
 		
 	
