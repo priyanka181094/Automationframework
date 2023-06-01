@@ -77,17 +77,17 @@ public class CreateOnlyContact extends BaseClass{
 		  //header
 		 ContactHeaderPage chead=new ContactHeaderPage(driver);
 		 String actualresult=chead.contactHeaderApp();
-		 //TO CHECK THE LISTENER
-		 Assert.assertTrue( actualresult.contains("Wasim"));
-			System.out.println("contact created failed");
+//		 //TO CHECK THE LISTENER
+//		 Assert.assertTrue( actualresult.contains("Wasim"));
+//			System.out.println("contact created failed");
 			
 			
 			
 			
-//			//to check the condition
-//			
-//			 Assert.assertTrue( actualresult.contains("Washim"));
-//				System.out.println("contact created passed");
+
+
+		 Assert.assertTrue( actualresult.contains("Washim"));
+			System.out.println("contact created passed");
 
 
 	
