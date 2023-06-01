@@ -15,13 +15,13 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 public class Listenerimplenetationclass  implements ITestListener{
 	
 	
-	ExtentReports report;
-	ExtentTest test;
+	//ExtentReports report;
+	//ExtentTest test;
 
 	public void onTestStart(ITestResult result) {
 		String methodname=result.getMethod().getMethodName();
 		System.out.println(methodname+"...........START");
-		test=report.createTest(methodname);
+		//test=report.createTest(methodname);
 		
 	}
 
@@ -29,33 +29,33 @@ public class Listenerimplenetationclass  implements ITestListener{
 		// TODO Auto-generated method stub
 		String methodname=result.getMethod().getMethodName();
 		System.out.println(methodname+"...........PASS");
-		test.log(Status.PASS, methodname+"...........PASS");
+		//test.log(Status.PASS, methodname+"...........PASS");
 		
 	}
 
 	public void onTestFailure(ITestResult result) {
 		String methodname=result.getMethod().getMethodName();
 		System.out.println(methodname+"...........FAILED");
-		test.log(Status.PASS, methodname+"...........Failed");
+		//test.log(Status.PASS, methodname+"...........Failed");
 		WebDriverUtility wutility=new WebDriverUtility ();
 		JavaUtility jutility=new JavaUtility();
-		try {
-			String path=wutility.takescreenshot(BaseClass.ssdriver,"screenshot");
-			test.addScreenCaptureFromPath(path);
-		}
+//		try {
+//			String path=wutility.takescreenshot(BaseClass.ssdriver,"screenshot");
+//			test.addScreenCaptureFromPath(path);
+//		}
 			
-			
-		 catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//			
+//		 catch (IOException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		
 	}
 
 	public void onTestSkipped(ITestResult result) {
 		String methodname=result.getMethod().getMethodName();
 		System.out.println(methodname+"...........SKIPPED");
-		test.log(Status.PASS, methodname+"...........Skip");
+		//test.log(Status.PASS, methodname+"...........Skip");
 		// TODO Auto-generated method stub
 		
 	}
@@ -98,7 +98,7 @@ public class Listenerimplenetationclass  implements ITestListener{
 	public void onFinish(ITestContext context) {
 		System.out.println("suit executionfinished");
 		
-		report.flush();
+		//report.flush();
 		
 		// TODO Auto-generated method stub
 		
