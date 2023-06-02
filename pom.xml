@@ -70,7 +70,7 @@
   
   <profiles>
   <profile>
-  <id> regression</id>
+  <id>regression</id>
   
   <build>
   <plugins>
