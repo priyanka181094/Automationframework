@@ -37,7 +37,7 @@ import vtigergenericUtility.PropertyfileUtility;
 import vtigergenericUtility.WebDriverUtility;
 @Listeners(vtigergenericUtility.Listenerimplenetationclass.class)
 public class CreateOnlyContact extends BaseClass{
-	@Test(groups="SmokeSuite")
+	@Test(groups="Regressionsuite")
 	public void createcontactonly() throws Throwable
 	{
 	

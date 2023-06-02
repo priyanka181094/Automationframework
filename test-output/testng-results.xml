@@ -1,41 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="4" total="7" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-06-02T00:17:55 IST" name="Default suite" finished-at="2023-06-02T00:18:06 IST" duration-ms="11142">
+  <suite started-at="2023-06-02T01:59:20 IST" name="Suite" finished-at="2023-06-02T02:00:25 IST" duration-ms="65359">
     <groups>
+      <group name="Regressionsuite">
+        <method signature="CreateContactwithOrganizationTest.createcontactwithorganization()[pri:0, instance:Vtigrerapplication.CreateContactwithOrganizationTest@a38c7fe]" name="createcontactwithorganization" class="Vtigrerapplication.CreateContactwithOrganizationTest"/>
+        <method signature="CreateOnlyContact.createcontactonly()[pri:0, instance:Vtigrerapplication.CreateOnlyContact@6fdbe764]" name="createcontactonly" class="Vtigrerapplication.CreateOnlyContact"/>
+        <method signature="Testcriptforcreateorganization.createOrganization()[pri:0, instance:Vtigrerapplication.Testcriptforcreateorganization@4f80542f]" name="createOrganization" class="Vtigrerapplication.Testcriptforcreateorganization"/>
+      </group> <!-- Regressionsuite -->
     </groups>
-    <test started-at="2023-06-02T00:17:55 IST" name="Default test" finished-at="2023-06-02T00:18:06 IST" duration-ms="11142">
+    <test started-at="2023-06-02T01:59:20 IST" name="Test" finished-at="2023-06-02T02:00:25 IST" duration-ms="65359">
       <class name="Vtigrerapplication.Testcriptforcreateorganization">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:Vtigrerapplication.Testcriptforcreateorganization@6bd61f98]" started-at="2023-06-02T00:17:55 IST" name="bsConfig" finished-at="2023-06-02T00:17:55 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="bsConfig()[pri:0, instance:Vtigrerapplication.Testcriptforcreateorganization@4f80542f]" started-at="2023-06-02T01:59:20 IST" name="bsConfig" finished-at="2023-06-02T01:59:20 IST" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Vtigrerapplication.Testcriptforcreateorganization@6bd61f98]" started-at="2023-06-02T00:17:55 IST" name="bcConfig" finished-at="2023-06-02T00:17:57 IST" duration-ms="2442" status="PASS">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Vtigrerapplication.Testcriptforcreateorganization@4f80542f]" started-at="2023-06-02T01:59:21 IST" name="bcConfig" finished-at="2023-06-02T01:59:23 IST" duration-ms="2908" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Vtigrerapplication.Testcriptforcreateorganization@6bd61f98]" started-at="2023-06-02T00:17:57 IST" name="bmConfig" finished-at="2023-06-02T00:17:59 IST" duration-ms="1669" status="PASS">
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Vtigrerapplication.Testcriptforcreateorganization@4f80542f]" started-at="2023-06-02T01:59:23 IST" name="bmConfig" finished-at="2023-06-02T01:59:27 IST" duration-ms="3621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bmConfig -->
-        <test-method signature="createOrganization()[pri:0, instance:Vtigrerapplication.Testcriptforcreateorganization@6bd61f98]" started-at="2023-06-02T00:17:59 IST" name="createOrganization" finished-at="2023-06-02T00:18:05 IST" duration-ms="6119" status="PASS">
+        <test-method signature="createOrganization()[pri:0, instance:Vtigrerapplication.Testcriptforcreateorganization@4f80542f]" started-at="2023-06-02T01:59:27 IST" name="createOrganization" finished-at="2023-06-02T01:59:38 IST" duration-ms="10543" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createOrganization -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:Vtigrerapplication.Testcriptforcreateorganization@6bd61f98]" started-at="2023-06-02T00:18:05 IST" name="amConfig" finished-at="2023-06-02T00:18:06 IST" duration-ms="791" status="PASS">
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Vtigrerapplication.Testcriptforcreateorganization@4f80542f]" started-at="2023-06-02T01:59:38 IST" name="amConfig" finished-at="2023-06-02T01:59:39 IST" duration-ms="1470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:Vtigrerapplication.Testcriptforcreateorganization@6bd61f98]" started-at="2023-06-02T00:18:06 IST" name="acConfig" finished-at="2023-06-02T00:18:06 IST" duration-ms="95" status="PASS">
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:Vtigrerapplication.Testcriptforcreateorganization@4f80542f]" started-at="2023-06-02T01:59:39 IST" name="acConfig" finished-at="2023-06-02T01:59:39 IST" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:Vtigrerapplication.Testcriptforcreateorganization@6bd61f98]" started-at="2023-06-02T00:18:06 IST" name="asConfig" finished-at="2023-06-02T00:18:06 IST" duration-ms="1" status="PASS">
+      </class> <!-- Vtigrerapplication.Testcriptforcreateorganization -->
+      <class name="Vtigrerapplication.CreateContactwithOrganizationTest">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Vtigrerapplication.CreateContactwithOrganizationTest@a38c7fe]" started-at="2023-06-02T01:59:39 IST" name="bcConfig" finished-at="2023-06-02T01:59:41 IST" duration-ms="1394" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- asConfig -->
-      </class> <!-- Vtigrerapplication.Testcriptforcreateorganization -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Vtigrerapplication.CreateContactwithOrganizationTest@a38c7fe]" started-at="2023-06-02T01:59:41 IST" name="bmConfig" finished-at="2023-06-02T01:59:44 IST" duration-ms="3481" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="createcontactwithorganization()[pri:0, instance:Vtigrerapplication.CreateContactwithOrganizationTest@a38c7fe]" started-at="2023-06-02T01:59:44 IST" name="createcontactwithorganization" finished-at="2023-06-02T02:00:06 IST" duration-ms="22001" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createcontactwithorganization -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Vtigrerapplication.CreateContactwithOrganizationTest@a38c7fe]" started-at="2023-06-02T02:00:06 IST" name="amConfig" finished-at="2023-06-02T02:00:07 IST" duration-ms="1364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:Vtigrerapplication.CreateContactwithOrganizationTest@a38c7fe]" started-at="2023-06-02T02:00:07 IST" name="acConfig" finished-at="2023-06-02T02:00:08 IST" duration-ms="106" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- Vtigrerapplication.CreateContactwithOrganizationTest -->
+      <class name="Vtigrerapplication.CreateOnlyContact">
+        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Vtigrerapplication.CreateOnlyContact@6fdbe764]" started-at="2023-06-02T02:00:08 IST" name="bcConfig" finished-at="2023-06-02T02:00:09 IST" duration-ms="1161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bcConfig -->
+        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Vtigrerapplication.CreateOnlyContact@6fdbe764]" started-at="2023-06-02T02:00:09 IST" name="bmConfig" finished-at="2023-06-02T02:00:12 IST" duration-ms="3732" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmConfig -->
+        <test-method signature="createcontactonly()[pri:0, instance:Vtigrerapplication.CreateOnlyContact@6fdbe764]" started-at="2023-06-02T02:00:12 IST" name="createcontactonly" finished-at="2023-06-02T02:00:23 IST" duration-ms="10996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createcontactonly -->
+        <test-method is-config="true" signature="amConfig()[pri:0, instance:Vtigrerapplication.CreateOnlyContact@6fdbe764]" started-at="2023-06-02T02:00:23 IST" name="amConfig" finished-at="2023-06-02T02:00:25 IST" duration-ms="1470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amConfig -->
+        <test-method is-config="true" signature="acConfig()[pri:0, instance:Vtigrerapplication.CreateOnlyContact@6fdbe764]" started-at="2023-06-02T02:00:25 IST" name="acConfig" finished-at="2023-06-02T02:00:25 IST" duration-ms="240" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acConfig -->
+      </class> <!-- Vtigrerapplication.CreateOnlyContact -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

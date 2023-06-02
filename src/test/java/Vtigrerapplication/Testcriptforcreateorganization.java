@@ -32,7 +32,7 @@ import vtigergenericUtility.WebDriverUtility;
 
 public class Testcriptforcreateorganization extends BaseClass{
 
-	@Test
+	@Test(groups="Regressionsuite")
 	public void createOrganization() throws EncryptedDocumentException, IOException
 	{
 		DatafileUtility dutility=new DatafileUtility();

@@ -4,21 +4,25 @@
   <test thread-count="5" name="Test(failed)">
     <groups>
       <run>
-        <include name="SmokeSuite"/>
+        <include name="Regressionsuite"/>
       </run>
     </groups>
     <classes>
-      <class name="Vtigrerapplication.CreateContactddhardcode">
+      <class name="Vtigrerapplication.Testcriptforcreateorganization">
+        <methods>
+          <include name="createOrganization"/>
+        </methods>
+      </class> <!-- Vtigrerapplication.Testcriptforcreateorganization -->
+      <class name="Vtigrerapplication.CreateOnlyContact">
         <methods>
           <include name="createcontactonly"/>
-          <include name="acConfig"/>
-          <include name="asConfig"/>
-          <include name="bcConfig"/>
-          <include name="amConfig"/>
-          <include name="bsConfig"/>
-          <include name="bmConfig"/>
         </methods>
-      </class> <!-- Vtigrerapplication.CreateContactddhardcode -->
+      </class> <!-- Vtigrerapplication.CreateOnlyContact -->
+      <class name="Vtigrerapplication.CreateContactwithOrganizationTest">
+        <methods>
+          <include name="createcontactwithorganization"/>
+        </methods>
+      </class> <!-- Vtigrerapplication.CreateContactwithOrganizationTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

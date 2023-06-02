@@ -24,19 +24,18 @@ public class BaseClass {
 	WebDriverUtility wutility=new WebDriverUtility ();
 	JavaUtility jutility=new JavaUtility();
 	
-	public static WebDriver ssdriver;//for listener
+	//public static WebDriver ssdriver;//for listener
 
 	
 	public WebDriver driver;
 	
-	@BeforeSuite(groups="SmokeSuite")
+	@BeforeSuite(groups="Regressionsuite")
 	public void bsConfig()
 	{
 		System.out.println("get the database connection");
 	}
 	
-	@BeforeClass(groups="SmokeSuite")
-	
+	@BeforeClass(groups="Regressionsuite")
 	//for crossbrowser execution public void  bcConfig(String Browser)
 	public void  bcConfig() throws Throwable
 	{
@@ -45,8 +44,9 @@ public class BaseClass {
 		if(browsername.equalsIgnoreCase("Chrome"))
 		{
 			
-			// WebDriverManager.chromedriver().setup();
+			 WebDriverManager.chromedriver().setup();
 			 driver=new ChromeDriver();
+			 
 			 System.out.println("Base class is working"+browsername+"browser launched succesfully");
 			
 		}
@@ -58,25 +58,29 @@ public class BaseClass {
 		}
 		
 		
-		 ssdriver=driver;//renializaing;//listener
+		// ssdriver=driver;//renializaing;//listener
 		wutility.maximizethewindow(driver);
-		wutility.waitforpage(driver);
-		 driver.get(url);
+	
+		 
 	}
 	
-	@BeforeMethod(groups="SmokeSuite")
+	@BeforeMethod(groups="Regressionsuite")
 	public void  bmConfig() throws Throwable
 	{
 		//for username and password and click on login
-		
+		 
 		String username=putility.propertfileutility("username");
 		String password=putility.propertfileutility("password");
+		String url=putility.propertfileutility("url");
+		driver.get(url);
+		wutility.waitforpage(driver);
+		
 		 LoginPagePOM  logo=new LoginPagePOM (driver);
 		 logo.LoginApp(username,password);	
 		 System.out.println("login successfull");
 		
 	}
-	@AfterMethod(groups="SmokeSuite")
+	@AfterMethod(groups="Regressionsuite")
 	public void  amConfig()
 	{
 		
@@ -87,14 +91,14 @@ public class BaseClass {
 
 
 
-@AfterClass(groups="SmokeSuite")
+@AfterClass(groups="Regressionsuite")
 public void  acConfig()
 {
 	driver.close();
 	System.out.println("........browser closed.......");
 }
 
-@AfterSuite(groups="SmokeSuite")
+@AfterSuite(groups="RegressionSuite")
 public void  asConfig()
 {
 	System.out.println("delete the database connection");
