@@ -39,9 +39,11 @@ public class BaseClass {
 	//for crossbrowser execution public void  bcConfig(String Browser)
 	public void  bcConfig() throws Throwable
 	{
-		String browsername=putility.propertfileutility("browser");
-		String url=putility.propertfileutility("url");
-		if(browsername.equalsIgnoreCase("Chrome"))
+		//String browsername=putility.propertfileutility("browser");
+		//String url=putility.propertfileutility("url");
+		String browsername=System.getProperty("browser");
+		String url=System.getProperty("url");
+		if(browsername.equalsIgnoreCase("chrome"))
 		{
 			
 			 WebDriverManager.chromedriver().setup();
@@ -68,8 +70,7 @@ public class BaseClass {
 	public void  bmConfig() throws Throwable
 	{
 		//for username and password and click on login
-		 
-		String username=putility.propertfileutility("username");
+		 String username=putility.propertfileutility("username");
 		String password=putility.propertfileutility("password");
 		String url=putility.propertfileutility("url");
 		driver.get(url);

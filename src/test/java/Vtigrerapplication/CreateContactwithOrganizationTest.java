@@ -42,7 +42,7 @@ import vtigergenericUtility.WebDriverUtility;
 public class CreateContactwithOrganizationTest extends BaseClass
 {
 
-	@Test(groups="Regressionsuite")
+	@Test(groups={"Regressionsuite","SmokeSuite"})
 	public void createcontactwithorganization() throws EncryptedDocumentException, IOException
 	{
 		DatafileUtility dutility=new DatafileUtility();
